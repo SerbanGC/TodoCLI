@@ -6,6 +6,13 @@ public class Task
     public string? Description { get; set; }
     public bool Status { get; set; }
 
+    public Task(int Id, string Description, bool Status)
+    {
+        this.Id = Id;
+        this.Description = Description;
+        this.Status = Status;
+    }
+
 
     public override string ToString()
     {

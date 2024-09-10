@@ -33,8 +33,11 @@ class Meniu
                 switch (input.ToUpper())
                 {
                     case "LIST":
-                        List<Task> tasks = db.readFile();
-                        printAllTasks(tasks);
+                        List<Task> tasks = db.ReadFile();
+                        PrintAllTasks(tasks);
+                        break;
+                    case "ADD":
+                        db.AddTask();
                         break;
                     default:
                         break;
@@ -47,7 +50,7 @@ class Meniu
         }
     }
 
-    private void printAllTasks(List<Task> tasks)
+    private void PrintAllTasks(List<Task> tasks)
     {
         Console.WriteLine("{0,-10} {1,-65} {2,-2}", "Id", "Description", "Status");
         Console.WriteLine(new string('-', 83));
