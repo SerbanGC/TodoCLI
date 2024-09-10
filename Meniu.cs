@@ -8,16 +8,19 @@ enum Options
     EDIT,
     DELETE,
     UPDATE,
-    LIST
+    LIST,
+    EXIT
 }
 
 class Meniu
 {
     private Db db;
+    private TaskService service;
 
-    public Meniu(Db db)
+    public Meniu(TaskService service, Db db)
     {
         this.db = db;
+        this.service = service;
     }
 
     public void OpenMeniu()
@@ -25,7 +28,6 @@ class Meniu
         System.Console.WriteLine("Todo App");
         while (true)
         {
-
             string input = Console.ReadLine();
             bool isValidOption = Enum.IsDefined(typeof(Options), input.ToUpper());
             if (isValidOption)
@@ -33,11 +35,14 @@ class Meniu
                 switch (input.ToUpper())
                 {
                     case "LIST":
-                        List<Task> tasks = db.ReadFile();
+                        List<Task> tasks = service.GetTaskList();
                         PrintAllTasks(tasks);
                         break;
                     case "ADD":
-                        db.AddTask();
+                        service.AddTask();
+                        break;
+                    case "EXIT":
+                        Environment.Exit(0);
                         break;
                     default:
                         break;

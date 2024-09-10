@@ -1,6 +1,7 @@
 ﻿using System.Text;
 
 Db db = new Db();
-Meniu meniu = new Meniu(db);
+TaskService service = new TaskService(db.FileLocation);
+Meniu meniu = new Meniu(service, db);
 
 meniu.OpenMeniu();
