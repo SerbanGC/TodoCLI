@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gabriel.serban\\.nuget\\packages\\": {}
+    "/Users/gabrielserban/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.serban\\test\\test.csproj",
+      "projectUniqueName": "/Users/gabrielserban/cli/TodoCLI/test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\gabriel.serban\\test\\test.csproj",
-      "packagesPath": "C:\\Users\\gabriel.serban\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.serban\\test\\obj\\",
+      "projectPath": "/Users/gabrielserban/cli/TodoCLI/test.csproj",
+      "packagesPath": "/Users/gabrielserban/.nuget/packages/",
+      "outputPath": "/Users/gabrielserban/cli/TodoCLI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabriel.serban\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/gabrielserban/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
